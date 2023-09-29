@@ -1,75 +1,106 @@
-*{
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Ubuntu:wght@300;400;500&display=swap');
+* {
     padding: 0;
-}
-h2{
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    
-}
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-}
-
-.body{
-    height: 100vh;
-}
-
-.logo{
-    display: block;
-    padding: 32px 0 0 56px;
-}
-
-.content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.login{
-    width: 20%;
-    margin: 200px 0px;
-    padding: 30px;
-    box-shadow: 0 5px 15px #ccc;
-    background-color: white;
-}
-
-.login-form{
-    display: flex;
-    flex-direction: column;
     margin: 0;
-    width: 100%;
-}
-
-.login-form input{
-    width: 100%;
-    margin: 5px 0;
-    padding: 10px;
-    box-sizing: border-box;
-   
-}
-.btn{
-    background-color: #0073b1;
-    border: 1px solid white;
-    border-radius: 15px;
-    color:white;
-}
-
-.btn:hover{
-    background-color: aqua;
-}
-
-.link{
-    margin: 5px 0;
-    color: #0073b1;
+    outline: 0;
     text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
 }
 
-.footer{
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-div form {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh 2vw;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.form-div form .instaLogo {
+    width: 200px;
+    margin: 20px 0;
+}
+
+.form-div form .input {
+    width: 90%;
+    padding: .6rem;
+    border-radius: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    margin: 3px;
+}
+
+.login-btn {
+    width: 97%;
+    padding: .4rem;
+    font-weight: 700;
+    background-color: rgb(1, 183, 255);
+    border: none;
+    border-radius: 8px;
+    margin: 8px 0px;
+    color: white;
+}
+
+#or {
+    margin: 20px 0;
+}
+
+#or:before,
+#or:after {
+    content: '------------------------';
+    color: rgba(128, 128, 128, 0.7);
+    margin: 0 10px;
+}
+
+.fb-login {
+    font-weight: 700;
+    font-size: 95%;
+    color: rgb(85, 0, 255);
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.sign-up {
+    text-align: center;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 20px;
+    margin: 10px;
+}
+
+.get-app {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.store {
+    display: flex;
+    align-items: center;
+}
+
+#play {
+    width: 190px;
+}
+
+#microsoft {
+    width: 135px;
+    border-radius: 8px;
 }
